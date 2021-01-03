@@ -22,6 +22,8 @@ export default class Csstransition extends PureComponent {
         <CSSTransition in={isShow}
                        classNames = "card"
                        timeout={500}
+                       unmountOnExit={true}
+                       appear
                        >
           <Card
             style={{ width: 300 }}

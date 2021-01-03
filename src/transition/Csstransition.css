@@ -1,13 +1,13 @@
-.card-enter{
+.card-enter,.card-appear{
   opacity: 0;
   transform: scale(.6);
 }
-.card-enter-active{
+.card-enter-active,.card-appear-active{
   opacity: 1;
   transition: all 500ms;
   transform: scale(1);
 }
-.card-enter-done{
+.card-enter-done,.card-appear-done{
 
 }
 
