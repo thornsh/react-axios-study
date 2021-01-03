@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import axios from 'axios'
 
+import Csstransition from './transition/Csstransition'
+
 export default class App extends PureComponent {
   constructor(){
     super();
@@ -35,6 +37,7 @@ export default class App extends PureComponent {
     return (
       <div>
         ccc
+        <Csstransition/>
       </div>
     )
   }
