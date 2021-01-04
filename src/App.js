@@ -3,6 +3,8 @@ import axios from 'axios'
 
 import Csstransition from './transition/Csstransition'
 import Switchtransition from './transition/Switchtransition'
+import Transitiongroup from './transition/Transitiongroup';
+
 
 export default class App extends PureComponent {
   constructor(){
@@ -40,6 +42,7 @@ export default class App extends PureComponent {
         ccc
         <Csstransition/>
         <Switchtransition/>
+        <Transitiongroup/>
       </div>
     )
   }
