@@ -1,0 +1,15 @@
+.btn-enter{
+  opacity: 0;
+}
+.btn-enter-active{
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.btn-exit{
+  opacity: 1;
+}
+.btn-exit-active{
+  opacity: 0;
+  transition: opacity 300ms;
+}

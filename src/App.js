@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import axios from 'axios'
 
 import Csstransition from './transition/Csstransition'
+import Switchtransition from './transition/Switchtransition'
 
 export default class App extends PureComponent {
   constructor(){
@@ -38,6 +39,7 @@ export default class App extends PureComponent {
       <div>
         ccc
         <Csstransition/>
+        <Switchtransition/>
       </div>
     )
   }
