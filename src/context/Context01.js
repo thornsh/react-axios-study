@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react'
 
+import FirstContext from '../context_utils/context'
+
 export class Context01 extends PureComponent {
   constructor(){
     super();
@@ -10,7 +12,10 @@ export class Context01 extends PureComponent {
   render() {
     return (
       <div>
-        <Context02 active = {this.state.active}/>
+        <FirstContext.Provider value = "dark">
+          <Context02 active = {this.state.active}/>
+        </FirstContext.Provider>
+        
       </div>
     )
   }
@@ -28,10 +33,11 @@ export class Context02 extends PureComponent {
 }
 
 export class Context03 extends PureComponent {
+  static contextType = FirstContext;
   render() {
     return (
       <div>
-        <button className={this.props.active ? "active" : "noactive"}>按钮</button>
+        <button theme={this.context} className={this.props.active ? "active" : "noactive"}>按钮</button>
       </div>
     )
   }
