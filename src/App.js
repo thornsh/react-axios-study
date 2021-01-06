@@ -5,6 +5,8 @@ import Csstransition from './transition/Csstransition'
 import Switchtransition from './transition/Switchtransition'
 import Transitiongroup from './transition/Transitiongroup';
 
+import { Context01 } from './context/Context01'
+
 
 export default class App extends PureComponent {
   constructor(){
@@ -43,6 +45,8 @@ export default class App extends PureComponent {
         <Csstransition/>
         <Switchtransition/>
         <Transitiongroup/>
+        <hr/>
+        <Context01/>
       </div>
     )
   }
