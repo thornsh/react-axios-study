@@ -34,13 +34,19 @@ export class Context02 extends PureComponent {
 
 export class Context03 extends PureComponent {
   static contextType = FirstContext;
+  
   render() {
     return (
       <div>
         <button theme={this.context} className={this.props.active ? "active" : "noactive"}>按钮</button>
+
+        <FirstContext.Consumer>
+          {
+            (value)=><button theme={value}>按钮二</button>
+          }
+        </FirstContext.Consumer>
       </div>
     )
   }
 }
-
 
