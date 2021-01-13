@@ -7,6 +7,8 @@ import Transitiongroup from './transition/Transitiongroup';
 
 import { Context01 } from './context/Context01'
 
+import ContextParent from './context/ContextParent';
+
 
 export default class App extends PureComponent {
   constructor(){
@@ -47,6 +49,8 @@ export default class App extends PureComponent {
         <Transitiongroup/>
         <hr/>
         <Context01/>
+        <hr/>
+        <ContextParent/>
       </div>
     )
   }
